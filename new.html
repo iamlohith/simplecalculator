@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body
+		{
+			background-color: lightblue;
+			text-align: center;
+		}
+		
+		{}
+	</style>
+	<title> WELCOME TO CALCULATOR WORLD</title>
+</head>
+<body>
+	<h1>WELCOME TO CALCULATOR WORLD</h1>
+<script type="text/javascript">
+	function cal()
+	{   
+ 
+         var op,op1,var1,var2;
+          op=document.getElementById("sel");
+          op1=op.options[op.selectedIndex].value;
+        var1=document.forms[0].elements[1].value;
+        var2=document.forms[0].elements[2].value;
+      
+        switch(op1)
+        {  case "add": 
+              alert("the result is "+(var1+var2));
+              break;
+           case "sub":
+            alert("the result is "+(var1-var2));
+                   break;
+            case "mul":
+             alert("the result is "+(var1*var2));
+                      break;
+            case "div": 
+            alert("the result is "+(var1/var2));
+                     break;
+                     }
+        
+	}
+
+</script>
+<br>
+<form >
+	<p> SELECT THE OPERATION TO BE PERFORMED</p>
+
+	<select id="sel">
+    	<option value="add">ADDITION</option>
+    	<option value="sub">SUBTRACTION</option>
+    	<option value="mul">MULTIPLICATON</option>
+    	<option value="div">DIVISION</option>
+    </select>
+    <br>
+    <br>
+    NUMUBER1    <input type="text" name="num1" value="">
+	<br>
+	<br>
+NUMBER2  <input type="text" name="num2" value="">
+	<br>
+	<br>
+
+	          <input type="button" value="CALCULATE" onclick="cal()" >
+	</form>
+	<br>
+</center>
+	</body>
+</html>
